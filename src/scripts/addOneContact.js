@@ -19,7 +19,7 @@ export const addOneContact = async () => {
             contacts.push(newContact);
 
         await fs.writeFile(filePathDb, JSON.stringify(contacts, null, 2), 'utf8');
-        console.log("contacts added");
+        console.log("contact added");
     } catch (error) {
         console.error('Problems with adding contact', error);
     }
